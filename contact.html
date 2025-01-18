@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Portfolio - Contact</title>
+  <link rel="stylesheet" href="contact.css">
+</head>
+<body>
+  <div id="book">
+    <!-- Page Section for Contact -->
+    <section class="page active" id="contact">  <!-- Ensure 'active' is here to show the page -->
+      <div class="content">
+        <h2>Contact Me</h2>
+        <form id="contact-form">
+          <label for="name">Name:</label>
+          <input type="text" id="name" name="name" required>
+
+          <label for="email">Email:</label>
+          <input type="email" id="email" name="email" required>
+
+          <label for="message">Message:</label>
+          <textarea id="message" name="message" required></textarea>
+
+          <button type="submit">Send Message</button>
+        </form>
+        <!-- Button to go back to the Projects page -->
+        <button onclick="goToProjectsPage()">Back to Projects</button>
+      </div>
+    </section>
+  </div>
+
+  <script src="contact.js"></script>
+</body>
+</html>
