@@ -11,7 +11,7 @@ body {
   justify-content: center;
   align-items: center;
   min-height: 100vh; /* Changed to ensure proper display on smaller devices */
-  background-color: #3a3b3b;
+  background-color: #0e6d6d;
   padding: 20px; /* Prevent elements from being too close to the edges */
 }
 
@@ -96,7 +96,7 @@ h1 {
 
 p {
   font-size: 1.1rem;
-  color: #f7ecbf;
+  color: #ffffff;
   margin-bottom: 20px;
   opacity: 30;
   transform: translateY(50px); /* Start below */
@@ -105,6 +105,7 @@ p {
 
 button {
   padding: 10px 20px;
+  top: 5px;
   font-size: 1rem;
   background-color: #eec303;
   color: white;
@@ -267,4 +268,39 @@ button:hover {
     font-size: 0.8rem;
     padding: 6px 12px;
   }
+}
+.image-container {
+  position: relative;
+  justify-content: center; /* Centrer l'image horizontalement */
+  align-items: center; /* Centrer verticalement (optionnel) */
+  width: 100%; /* S'étendre sur tout l'espace horizontal */
+  height: 220px; 
+  display: inline-block;
+}
+
+.image-background {
+  position: absolute;
+  background-color: #493c02; /* Couleur de la bande */
+  height: 196px; /* Hauteur de la bande */
+  width: 100%; /* La largeur de l'image */
+  left: 50%; /* Place la bande au centre */
+  transform: translateX(-50%); /* Centrer horizontalement */
+  z-index: 1; /* Place la bande derrière l'image */
+  border-radius: 16px; /* Ajoute des bords arrondis (optionnel) */
+}
+
+.home-image {
+  position: relative;
+  width: 200px; 
+  height: 200px;
+  border-radius: 50%; 
+  object-fit: cover;
+  z-index: 2; 
+  box-shadow: 0 10px 15px rgba(238, 180, 5, 0.815);
+  display: block;
+  background: linear-gradient(45deg, #b707c7, #c2b204, #0e67af);
+  border: 15px solid #414241; 
+  background-color: #ffffff; 
+  content: "";
+
 }
