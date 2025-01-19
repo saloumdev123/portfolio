@@ -86,12 +86,14 @@ body {
 }
 
 h1 {
-  font-size: 2rem;
+  font-size: 2.5rem;
+  font-family: 'Poppins';
   margin-bottom: 10px;
   color: #eec303;
   opacity: 0;
   transform: translateY(20px); /* Start below */
   transition: opacity 0.5s ease, transform 0.5s ease;
+  text-shadow: 2px 2px 4px rgba(250, 250, 249, 0.3);
 }
 
 p {
